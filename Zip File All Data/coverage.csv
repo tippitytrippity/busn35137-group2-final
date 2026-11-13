@@ -1,0 +1,26 @@
+group,variable,first,last,months,gaps
+Target,target_next3m_corr,1985-01,2025-09,489,0
+Target,bench_trailing3m_corr,1985-03,2025-12,490,0
+A_macro,infl_yoy,1986-02,2025-12,478,1
+A_macro,infl_vol12,1986-02,2025-10,477,0
+A_macro,exp_infl_mich,1985-02,2025-12,491,0
+A_macro,unemp_chg12,1986-02,2025-12,478,1
+A_macro,tbill,1985-01,2025-12,492,0
+A_macro,term_spread,1985-01,2025-12,492,0
+B_liquidity,credit_spread,1985-01,2025-12,492,0
+B_liquidity,cp_spread,1985-01,2025-12,492,0
+B_liquidity,vix_monthend,1986-01,2025-12,480,0
+B_liquidity,treasury_noise,1987-01,2025-12,468,0
+B_liquidity,ps_liquidity,1985-01,2025-12,492,0
+C_news,epu_overall,1985-01,2025-12,492,0
+C_news,epu_monetary,1985-01,2025-12,492,0
+C_news,emv_inflation_share,1985-01,2025-12,492,0
+C_news,emv_rates_share,1985-01,2025-12,492,0
+C_news,emv_monetary_share,1985-01,2025-12,492,0
+C_news,emv_macro_news_share,1985-01,2025-12,492,0
+D_wsj_robustness,wsj_Federal Reserve,1985-01,2017-06,390,0
+D_wsj_robustness,wsj_Recession,1985-01,2017-06,390,0
+D_wsj_robustness,wsj_Oil market,1985-01,2017-06,390,0
+D_wsj_robustness,wsj_Treasury bonds,1985-01,2017-06,390,0
+D_wsj_robustness,wsj_Financial crisis,1985-01,2017-06,390,0
+D_wsj_robustness,wsj_Government budgets,1985-01,2017-06,390,0

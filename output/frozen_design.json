@@ -1,0 +1,250 @@
+{
+  "selected_method": {
+    "A": "Ridge",
+    "B": "Lasso",
+    "C": "OLS",
+    "A+B": "Elastic net",
+    "A+C": "Lasso",
+    "B+C": "PLS",
+    "A+B+C": "Elastic net"
+  },
+  "headline": "equal-weight Ridge + PCR",
+  "windows": {
+    "burn-in": "1987-01..1999-12",
+    "validation (scored)": "2000-01..2017-10",
+    "test": "2018-01..2025-09"
+  },
+  "refit": "yearly expanding; fit rows 1987-01..(Y-1)-10; hyperparameters re-tuned by purged blocked 5-fold CV",
+  "combination": {
+    "window": 36,
+    "min_errors": 12
+  },
+  "grids": {
+    "ridge_rel": [
+      1e-06,
+      100.0,
+      49
+    ],
+    "enet_rel": [
+      0.001,
+      1.0,
+      40
+    ],
+    "enet_l1": [
+      0.2,
+      0.5,
+      0.8
+    ],
+    "rf": [
+      {
+        "max_depth": 2,
+        "min_samples_leaf": 5,
+        "max_features": 0.33
+      },
+      {
+        "max_depth": 2,
+        "min_samples_leaf": 5,
+        "max_features": 0.66
+      },
+      {
+        "max_depth": 2,
+        "min_samples_leaf": 5,
+        "max_features": 1.0
+      },
+      {
+        "max_depth": 2,
+        "min_samples_leaf": 10,
+        "max_features": 0.33
+      },
+      {
+        "max_depth": 2,
+        "min_samples_leaf": 10,
+        "max_features": 0.66
+      },
+      {
+        "max_depth": 2,
+        "min_samples_leaf": 10,
+        "max_features": 1.0
+      },
+      {
+        "max_depth": 2,
+        "min_samples_leaf": 20,
+        "max_features": 0.33
+      },
+      {
+        "max_depth": 2,
+        "min_samples_leaf": 20,
+        "max_features": 0.66
+      },
+      {
+        "max_depth": 2,
+        "min_samples_leaf": 20,
+        "max_features": 1.0
+      },
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 5,
+        "max_features": 0.33
+      },
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 5,
+        "max_features": 0.66
+      },
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 5,
+        "max_features": 1.0
+      },
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 10,
+        "max_features": 0.33
+      },
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 10,
+        "max_features": 0.66
+      },
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 10,
+        "max_features": 1.0
+      },
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 20,
+        "max_features": 0.33
+      },
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 20,
+        "max_features": 0.66
+      },
+      {
+        "max_depth": 3,
+        "min_samples_leaf": 20,
+        "max_features": 1.0
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 5,
+        "max_features": 0.33
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 5,
+        "max_features": 0.66
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 5,
+        "max_features": 1.0
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 10,
+        "max_features": 0.33
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 10,
+        "max_features": 0.66
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 10,
+        "max_features": 1.0
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 20,
+        "max_features": 0.33
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 20,
+        "max_features": 0.66
+      },
+      {
+        "max_depth": 5,
+        "min_samples_leaf": 20,
+        "max_features": 1.0
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 5,
+        "max_features": 0.33
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 5,
+        "max_features": 0.66
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 5,
+        "max_features": 1.0
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 10,
+        "max_features": 0.33
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 10,
+        "max_features": 0.66
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 10,
+        "max_features": 1.0
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 20,
+        "max_features": 0.33
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 20,
+        "max_features": 0.66
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 20,
+        "max_features": 1.0
+      }
+    ],
+    "rf_trees": 300,
+    "gb": [
+      {
+        "max_depth": 1,
+        "learning_rate": 0.01
+      },
+      {
+        "max_depth": 1,
+        "learning_rate": 0.1
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.01
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.1
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.01
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.1
+      }
+    ],
+    "gb_max_trees": 500
+  },
+  "frozen_at": "2026-11-13T14:44:48"
+}
