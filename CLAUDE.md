@@ -105,6 +105,21 @@ Context for Claude Code sessions. Everything here was agreed by the team; follow
 3. Slides: built around the correlation chart, Tables 1 and 2, and the combination-weights chart.
 4. Check every number in the paper and slides against `output/`.
 
+## Working notes (carried over from Phillip's Claude sessions)
+**How to work on this project**
+- Talk through methodology before writing code: splits, tuning and refitting were each discussed several times before they were settled. When asked a question, explain the trade-offs and give a recommendation; don't jump straight to implementation. Sometimes the ask is for understanding only, with no code.
+- The team is comfortable with econometrics and ML vocabulary (OOS R², Clark–West, PLS, CV); no need to define basics.
+- The design choices above (the burn-in/validation/test split, per-refit CV, own history as the primary bar with the random walk as a second bar) were deliberate, settled after going back and forth. Don't reopen them unless a teammate does.
+- Record anything the team should know in this file and commit it. Claude's personal memory is local to one person's machine and is not shared.
+
+**Repo and tooling**
+- GitHub: `tippitytrippity/busn35137-group2-final`, branch `main`. Created 2026-11-13 from the `Final Project/` folder.
+- **Visibility:** the repo was created private because it contains CRSP data from WRDS (`T2_Treasury_Returns_Daily_CRSP_FixedTerm.zip`), which the license doesn't allow to be redistributed. On 2026-11-15 it was found to be **public**, and Phillip chose to keep it public for now. The team should decide on this before submission. `gh repo edit tippitytrippity/busn35137-group2-final --visibility private` switches it back.
+- Teammates have not been added as collaborators yet: GitHub → Settings → Collaborators.
+- `.gitignore` excludes `Zip File All Data.zip` (a duplicate of the extracted folder) and `~$*` Word lock files. `.gitattributes` stores the data files byte for byte.
+- On Phillip's machine, git and the GitHub CLI were installed via winget. In shells started before that install, they aren't on PATH: use `C:\Program Files\Git\cmd\git.exe` and `C:\Program Files\GitHub CLI\gh.exe`, or restart VS Code.
+- To re-execute the notebook headless: `python -m jupyter nbconvert --to notebook --execute --inplace final_project.ipynb` (about 10 minutes). With `RUN_TEST = True` this recomputes the test (deterministic) and writes new timestamped test files. Check they match `20261115_183600`, then delete the duplicates.
+
 ## Conventions
 - Python 3.13, with numpy, pandas, scikit-learn, scipy, matplotlib and joblib (see `requirements.txt`). Run the notebook from this folder.
 - Window dates, grids and seeds live in the notebook's setup cell. `SEED = 0`.
