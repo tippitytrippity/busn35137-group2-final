@@ -1,0 +1,6 @@
+"diagnostic (ex post, not a model)","R2 vs own, validation (%)","R2 vs own, test (%)"
+"combination, accuracy-weighted (pre-registered)",4.753328137900404,1.1864810854642083
+fixed equal weights (1/3 each),4.62763396891368,1.761844208141361
+own history + full C shift (= C headline),7.624954312003718,-9.791536811699197
+own history + 1/2 x C shift,5.760012274868465,1.9338589374116366
+own history + 1/3 x C shift,4.272793765215999,2.8069342567769384
